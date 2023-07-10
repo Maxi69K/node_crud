@@ -1,0 +1,19 @@
+<%- include('partials/top') %>
+
+<h1 class="text-center py-5">Edit phone</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+
+        <input class="form-control mb-3" type="hidden" placeholder="Id" name="id" value="<%= phone.id %>" >
+        <input class="form-control mb-3" type="text" placeholder="Brand" name="brand" value="<%= phone.brand %>" >
+        <input class="form-control mb-3" type="text" placeholder="Model" name="model" value="<%= phone.model %>" >
+        <input class="form-control mb-3" type="number" placeholder="Price" name="price" value="<%= phone.price %>" >
+        <input class="form-control mb-3" type="number" placeholder="Count" name="count" value="<%= phone.count %>" >
+        <button id="save-changes" class="btn btn-primary form-control">Save changes</button>
+
+    </div>
+  </div>
+</div>
+
+<%- include('partials/bottom') %>
